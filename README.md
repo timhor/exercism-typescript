@@ -104,7 +104,7 @@ A lot of the improvements made to this track and tooling, is also made to the Ja
 - [ ] [word-count](./exercises/practice/word-count)
 - [ ] [difference-of-squares](./exercises/practice/difference-of-squares)
 - [ ] [gigasecond](./exercises/practice/gigasecond)
-- [ ] [reverse-string](./exercises/practice/reverse-string)
+- [x] [reverse-string](./exercises/practice/reverse-string)
 - [ ] [triangle](./exercises/practice/triangle)
 - [ ] [collatz-conjecture](./exercises/practice/collatz-conjecture)
 - [ ] [etl](./exercises/practice/etl)
