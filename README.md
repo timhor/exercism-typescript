@@ -94,7 +94,7 @@ A lot of the improvements made to this track and tooling, is also made to the Ja
 - [ ] [grade-school](./exercises/practice/grade-school)
 - [ ] [clock](./exercises/practice/clock)
 - [ ] [secret-handshake](./exercises/practice/secret-handshake)
-- [ ] [binary-search](./exercises/practice/binary-search)
+- [x] [binary-search](./exercises/practice/binary-search)
 - [ ] [linked-list](./exercises/practice/linked-list)
 - [ ] [rational-numbers](./exercises/practice/rational-numbers)
 - [ ] [atbash-cipher](./exercises/practice/atbash-cipher)
