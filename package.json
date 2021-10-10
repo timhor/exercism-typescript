@@ -39,7 +39,8 @@
     "lint": "yarn babel-node scripts/lint",
     "sync": "yarn babel-node scripts/sync",
     "test": "yarn babel-node scripts/test",
-    "format": "yarn babel-node scripts/format"
+    "format": "yarn babel-node scripts/format",
+    "install:practice:all": "for directory in exercises/practice/*/; do yarn --cwd \"${directory}\"; done"
   },
   "dependencies": {}
 }
