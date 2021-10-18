@@ -79,6 +79,8 @@ A lot of the improvements made to this track and tooling, is also made to the Ja
 
 ## Progress
 
+For a randomly picked suggestion on which exercise to try next, run `yarn next-exercise`.
+
 - [ ] [hello-world](./exercises/practice/hello-world)
 - [ ] [two-fer](./exercises/practice/two-fer)
 - [ ] [resistor-color-duo](./exercises/practice/resistor-color-duo)
