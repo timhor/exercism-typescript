@@ -165,7 +165,7 @@ A lot of the improvements made to this track and tooling, is also made to the Ja
 - [ ] [accumulate](./exercises/practice/accumulate)
 - [ ] [all-your-base](./exercises/practice/all-your-base)
 - [ ] [flatten-array](./exercises/practice/flatten-array)
-- [ ] [matching-brackets](./exercises/practice/matching-brackets)
+- [x] [matching-brackets](./exercises/practice/matching-brackets)
 - [ ] [minesweeper](./exercises/practice/minesweeper)
 - [ ] [kindergarten-garden](./exercises/practice/kindergarten-garden)
 - [ ] [queen-attack](./exercises/practice/queen-attack)
