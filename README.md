@@ -93,7 +93,7 @@ For a randomly picked suggestion on which exercise to try next, run `yarn next-e
 - [ ] [bob](./exercises/practice/bob)
 - [ ] [matrix](./exercises/practice/matrix)
 - [ ] [robot-name](./exercises/practice/robot-name)
-- [ ] [grade-school](./exercises/practice/grade-school)
+- [x] [grade-school](./exercises/practice/grade-school)
 - [ ] [clock](./exercises/practice/clock)
 - [ ] [secret-handshake](./exercises/practice/secret-handshake)
 - [x] [binary-search](./exercises/practice/binary-search)
