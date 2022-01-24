@@ -101,7 +101,7 @@ For a randomly picked suggestion on which exercise to try next, run `yarn next-e
 - [ ] [rational-numbers](./exercises/practice/rational-numbers)
 - [ ] [atbash-cipher](./exercises/practice/atbash-cipher)
 - [ ] [simple-cipher](./exercises/practice/simple-cipher)
-- [ ] [wordy](./exercises/practice/wordy)
+- [?] [wordy](./exercises/practice/wordy)
 - [ ] [list-ops](./exercises/practice/list-ops)
 - [ ] [word-count](./exercises/practice/word-count)
 - [ ] [difference-of-squares](./exercises/practice/difference-of-squares)
