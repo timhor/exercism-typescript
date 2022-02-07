@@ -99,7 +99,7 @@ For a randomly picked suggestion on which exercise to try next, run `yarn next-e
 - [x] [binary-search](./exercises/practice/binary-search)
 - [ ] [linked-list](./exercises/practice/linked-list)
 - [ ] [rational-numbers](./exercises/practice/rational-numbers)
-- [ ] [atbash-cipher](./exercises/practice/atbash-cipher)
+- [x] [atbash-cipher](./exercises/practice/atbash-cipher)
 - [ ] [simple-cipher](./exercises/practice/simple-cipher)
 - [?] [wordy](./exercises/practice/wordy)
 - [ ] [list-ops](./exercises/practice/list-ops)
