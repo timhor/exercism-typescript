@@ -163,7 +163,7 @@ For a randomly picked suggestion on which exercise to try next, run `yarn next-e
 - [ ] [armstrong-numbers](./exercises/practice/armstrong-numbers)
 - [ ] [run-length-encoding](./exercises/practice/run-length-encoding)
 - [ ] [rotational-cipher](./exercises/practice/rotational-cipher)
-- [ ] [strain](./exercises/practice/strain)
+- [x] [strain](./exercises/practice/strain)
 - [ ] [accumulate](./exercises/practice/accumulate)
 - [ ] [all-your-base](./exercises/practice/all-your-base)
 - [ ] [flatten-array](./exercises/practice/flatten-array)
