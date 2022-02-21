@@ -152,7 +152,7 @@ For a randomly picked suggestion on which exercise to try next, run `yarn next-e
 - [ ] [diamond](./exercises/practice/diamond)
 - [ ] [pascals-triangle](./exercises/practice/pascals-triangle)
 - [ ] [binary-search-tree](./exercises/practice/binary-search-tree)
-- [ ] [sublist](./exercises/practice/sublist)
+- [x] [sublist](./exercises/practice/sublist)
 - [ ] [custom-set](./exercises/practice/custom-set)
 - [ ] [circular-buffer](./exercises/practice/circular-buffer)
 - [ ] [word-search](./exercises/practice/word-search)

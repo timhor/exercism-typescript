@@ -2,6 +2,7 @@ type CompareResult = 'equal' | 'unequal' | 'sublist' | 'superlist';
 
 export class List {
   #list: number[];
+
   // List(1, 1, 2)
   constructor(...args: number[]) {
     this.#list = args;
@@ -12,40 +13,28 @@ export class List {
   }
 
   hasSameContents(otherList: List): boolean {
-    for (let i = 0; i < this.#list.length; i++) {
-      if (this.#list[i] !== otherList.#list[i]) {
-        return false;
-      }
-    }
-    return true;
+    return this.#list.every((value, index) => otherList.#list[index] === value);
   }
 
-  //   1 2 3 4 5
-  // i   ^
-  //   2 3 4
-  // j ^
-  // j is not another loop, it's just a 'pointer' to an index
-  // if it matches, increment both i and j
-  // as soon as there's a mismatch, return 'unequal'
-
-  // alternatively: compare contents of the smaller array with a window of the larger array of same length (reuses hasSameContents, but is O(N^2))
-
+  // Compare contents of the smaller array with a window of the larger array of same length
   isSubset(otherList: List): boolean {
-    otherList.#list.forEach((val, index) => {
-      this.#list.forEach((val2, index2) => {
-        console.log(val, val2);
-        if (val !== val2) {
-          return false;
-        } else {
+    for (const [index, value] of otherList.#list.entries()) {
+      // Only check the remainder of the list if there is a match on the first value
+      if (value === this.#list[0]) {
+        const slice = new List(
+          ...otherList.#list.slice(index, index + this.#list.length),
+        );
+        const sameContents = this.hasSameContents(slice);
+        if (sameContents) {
           return true;
         }
-      });
-    });
+      }
+    }
     return false;
   }
 
-  // listOne.compare(listTwo) where listTwo = List(1, 1, 2)
   compare(otherList: List): CompareResult {
+    // Edge cases
     if (this.isEmpty() && otherList.isEmpty()) {
       return 'equal';
     } else if (this.isEmpty() && !otherList.isEmpty()) {
@@ -53,14 +42,23 @@ export class List {
     } else if (!this.isEmpty() && otherList.isEmpty()) {
       return 'superlist';
     }
+
+    // Identical lists
     if (
       this.#list.length === otherList.#list.length &&
       this.hasSameContents(otherList)
     ) {
       return 'equal';
     }
+
+    // Check subset/superset
     if (this.#list.length < otherList.#list.length) {
-      this.isSubset(otherList);
+      const isSubset = this.isSubset(otherList);
+      return isSubset ? 'sublist' : 'unequal';
+    }
+    if (this.#list.length > otherList.#list.length) {
+      const isSuperset = otherList.isSubset(this);
+      return isSuperset ? 'superlist' : 'unequal';
     }
     return 'unequal';
   }
