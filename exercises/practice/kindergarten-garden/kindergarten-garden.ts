@@ -16,26 +16,46 @@ const DEFAULT_STUDENTS: Student[] = [
   'Joseph',
   'Kincaid',
   'Larry',
-]
+];
 
 const PLANT_CODES = {
   G: 'grass',
   V: 'violets',
   R: 'radishes',
   C: 'clover',
-} as const
+} as const;
 
-type Student = string
-type Plant = typeof PLANT_CODES[keyof typeof PLANT_CODES]
-type Plants = Plant[]
-type Pots = Plants[]
+type Student = string;
+type PlantKey = keyof typeof PLANT_CODES;
+type Plant = typeof PLANT_CODES[PlantKey];
+type Plants = Plant[];
+type Pots = Plants[];
+
+function isPlantKey(key: string): key is PlantKey {
+  return PLANT_CODES.hasOwnProperty(key);
+}
 
 export class Garden {
+  #plants: PlantKey[][];
+  #students: Student[];
+
   constructor(diagram: string, students = DEFAULT_STUDENTS) {
-    throw new Error('Remove this statement and implement this function')
+    this.#plants = diagram
+      .split('\n')
+      .map((line) => line.split('').filter(isPlantKey));
+    this.#students = students.sort();
   }
 
   public plants(student: Student): Plants {
-    throw new Error('Remove this statement and implement this function')
+    const indexOfStudent = this.#students.indexOf(student);
+    if (indexOfStudent > -1) {
+      return [
+        this.#plants[0][indexOfStudent * 2],
+        this.#plants[0][indexOfStudent * 2 + 1],
+        this.#plants[1][indexOfStudent * 2],
+        this.#plants[1][indexOfStudent * 2 + 1],
+      ].map((code) => PLANT_CODES[code]);
+    }
+    return [];
   }
 }

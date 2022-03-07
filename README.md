@@ -169,7 +169,7 @@ For a randomly picked suggestion on which exercise to try next, run `yarn next-e
 - [ ] [flatten-array](./exercises/practice/flatten-array)
 - [x] [matching-brackets](./exercises/practice/matching-brackets)
 - [ ] [minesweeper](./exercises/practice/minesweeper)
-- [ ] [kindergarten-garden](./exercises/practice/kindergarten-garden)
+- [x] [kindergarten-garden](./exercises/practice/kindergarten-garden)
 - [ ] [queen-attack](./exercises/practice/queen-attack)
 - [ ] [react](./exercises/practice/react)
 - [ ] [crypto-square](./exercises/practice/crypto-square)
